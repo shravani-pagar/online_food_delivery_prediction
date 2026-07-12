@@ -1,9 +1,10 @@
+import subprocess, sys
+subprocess.check_call([sys.executable, "-m", "pip", "install", "pandas==2.1.4", "numpy==1.26.4", "joblib==1.4.2"])
+
 import streamlit as st
 import pandas as pd
+import numpy as np
 import joblib
-import os
-import matplotlib.pyplot as plt
-
 # ==========================================
 # Shopping Cart
 # ==========================================
