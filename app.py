@@ -91,7 +91,6 @@ if page == "🏠 Home":
 
     st.image(
         "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
-        use_container_width=True
     )
 
     st.markdown("---")
@@ -278,7 +277,7 @@ elif page == "🍽 Menu":
 
         with col:
 
-            st.image(image, use_container_width=True)
+            st.image(image)
 
             st.markdown(f"""
             <div class='food-card'>
@@ -288,7 +287,7 @@ elif page == "🍽 Menu":
             </div>
             """, unsafe_allow_html=True)
 
-            if st.button("🛒 Order Now", key=name, use_container_width=True):
+            if st.button("🛒 Order Now", key=name):
 
                 st.session_state.cart.append({
                     "Food": name,
@@ -345,7 +344,7 @@ elif page == "🛒 Cart":
 
         st.subheader(f"💰 Total Amount : ₹{total}")
 
-        if st.button("✅ Place Order", use_container_width=True):
+        if st.button("✅ Place Order"):
 
             st.balloons()
             st.success("🎉 Order Placed Successfully!")
@@ -463,7 +462,7 @@ elif page == "🤖 Prediction":
 
     st.markdown("<br>", unsafe_allow_html=True)
 
-    if st.button("🚀 Predict Delivery Time", use_container_width=True):
+    if st.button("🚀 Predict Delivery Time"):
 
         restaurant = restaurant_encoder.transform([restaurant])[0]
         payment = payment_encoder.transform([payment])[0]
