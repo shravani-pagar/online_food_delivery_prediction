@@ -254,17 +254,33 @@ elif page == "🍽 Menu":
     st.write("### Fresh • Tasty • Fast Delivery 🚀")
     st.markdown("---")
 
-    foods = [
-        ("🍔 Burger","₹199","⭐ 4.8","https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500"),
-        ("🍕 Pizza","₹349","⭐ 4.9","https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500"),
-        ("🍝 Pasta","₹249","⭐ 4.7","https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500"),
-        ("🍟 French Fries","₹129","⭐ 4.6","https://images.unsplash.com/photo-1576107232684-1279f390859f?w=500"),
-        ("🌮 Tacos","₹229","⭐ 4.8","https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?w=500"),
-        ("🥗 Salad","₹149","⭐ 4.5","https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500"),
-        ("🍰 Cake","₹299","⭐ 4.9","https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500"),
-        ("🥤 Cold Drink","₹79","⭐ 4.4","https://images.unsplash.com/photo-1544145945-f90425340c7e?w=500"),
-        ("🍦 Ice Cream","₹99","⭐ 4.8","https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=500")
-    ]
+   foods = [
+    ("🍔 Burger","₹199","⭐ 4.8","https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500"),
+    ("🍕 Pizza","₹349","⭐ 4.9","https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500"),
+    ("🍝 Pasta","₹249","⭐ 4.7","https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500"),
+    ("🍟 French Fries","₹129","⭐ 4.6","https://images.unsplash.com/photo-1576107232684-1279f390859f?w=500"),
+    ("🌮 Tacos","₹229","⭐ 4.8","https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?w=500"),
+    ("🥗 Salad","₹149","⭐ 4.5","https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500"),
+    ("🍰 Cake","₹299","⭐ 4.9","https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500"),
+    ("🥤 Cold Drink","₹79","⭐ 4.4","https://images.unsplash.com/photo-1544145945-f90425340c7e?w=500"),
+    ("🍦 Ice Cream","₹99","⭐ 4.8","https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=500"),
+    ("🍛 Chicken Biryani","₹299","⭐ 4.9","https://images.unsplash.com/photo-1563379091339-03246963d29c?w=500"),
+    ("🥪 Sandwich","₹159","⭐ 4.6","https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=500"),
+    ("🍜 Noodles","₹199","⭐ 4.7","https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=500"),
+    ("🍗 Fried Chicken","₹279","⭐ 4.8","https://images.unsplash.com/photo-1562967916-eb82221dfb36?w=500"),
+    ("🌭 Hot Dog","₹179","⭐ 4.6","https://images.unsplash.com/photo-1612392062798-6f5b7f2d9965?w=500"),
+    ("🥟 Momos","₹149","⭐ 4.8","https://images.unsplash.com/photo-1626776876729-bab4369a5a5f?w=500"),
+    ("🍩 Donut","₹99","⭐ 4.7","https://images.unsplash.com/photo-1551024601-bec78aea704b?w=500"),
+    ("🧁 Cupcake","₹89","⭐ 4.6","https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=500"),
+    ("🍪 Cookies","₹129","⭐ 4.7","https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=500"),
+    ("🥞 Pancakes","₹189","⭐ 4.8","https://images.unsplash.com/photo-1528207776546-365bb710ee93?w=500"),
+    ("🍛 Paneer Butter Masala","₹269","⭐ 4.9","https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=500"),
+    ("🫓 Butter Naan","₹49","⭐ 4.7","https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500"),
+    ("🍚 Veg Fried Rice","₹199","⭐ 4.7","https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=500"),
+    ("☕ Coffee","₹99","⭐ 4.8","https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500"),
+    ("🧋 Bubble Tea","₹179","⭐ 4.6","https://images.unsplash.com/photo-1558857563-b371033873b8?w=500"),
+    ("🥤 Mango Shake","₹149","⭐ 4.8","https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=500")
+]
 
     for i in range(0, len(foods), 3):
 
